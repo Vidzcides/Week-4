@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            border:0;
+            box-sizing: border-box;
+        }
+        .header-part{
+            background-color:cornflowerblue;
+            height:120px;
+            padding:30px;
+        }
+        .header-part h1{
+            text-align: center;
+            text-shadow:01px 1px 1px gray;
+            color:#000000;
+        }
+        .header-part h2{
+            text-align: center;
+            text-shadow:01px 1px 1px gray;
+            text-decoration: underline;
+            color:#000000;
+        }
+        .mainsection{
+            background-color:bisque;
+            height:calc(100vh - 120px);
+        }
+       .mainsection .section1{
+        display: grid;
+        grid-template-columns: 500px 2fr;
+        gap:10px;
+        padding: 20px;
+        margin:auto;
+       }
+       label {
+       text-align: right;
+       padding:10px;
+       }
+      input{
+      width:500px;
+      border:2px solid white;
+      border-radius: 05px;
+      padding: 10px;
+      }
+    </style>
+</head>
+<body>
+<div class="header-part">
+    <h1>REPORT</h1>
+    <h2>Under The Section C.rCO 13</h2>
+</div>
+       <div class="mainsection">
+    <form>
+        <div class="section1">
+           <label for="casename">Case Title:</label>
+           <input type="text" id="casename" name="casename" required>
+           <label for="policestation">Police Station:</label>
+           <input type="text" id="policestation"  name="policestation" required>
+        </div>
+    </form>
+       </div>
+</div>
+</body>
+</html>
